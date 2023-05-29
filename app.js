@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 // cai dat va cau  hinh mongoose
 const mongoose = require('mongoose');
-var url = "mongodb+srv://ta123:ta123@cluster0.ppwjdxd.mongodb.net/?retryWrites=true&w=majority/gch1101";
+var url = "mongodb+srv://ta123:ta123@cluster0.ppwjdxd.mongodb.net/gch1101";
 mongoose.connect(url)
 .then(() => console.log ("Connect to DB succeed !"))
 .catch((err) => console.log (err));

@@ -5,7 +5,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', async(req, res) => {
   var books = await BookModel.find({});
-  
+ 
   res.render('book_list', { books: books });
 })
 router.get('/drop', async(req, res) => {
